@@ -1,0 +1,3164 @@
+    body {
+        margin: 0;
+    }
+    
+    .about-page {
+        min-width: 1024px;
+    }
+    
+    header {
+        min-width: 1024px;
+    }
+    
+    .global-navi {
+        background-color: #F7F7F7;
+        height: 30px;
+        width: 100%;
+    }
+    
+    .global-navi-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+    }
+    
+    .global-navi-content p {
+        color: #272727;
+        font-family: AxisStd-Regular;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 30px;
+        /*中央揃えにするために30にしてるけど本来15*/
+        float: left;
+        margin: 0;
+    }
+    
+    .global-navi-content ul {
+        width: 48%;
+        height: 100%;
+        float: right;
+        /* float: right; floatさせるとliタグの一部しか背景色変えれない */
+        list-style: none;
+        /* padding-left: 15px; */
+        margin: 0;
+        text-align: right;
+    }
+    
+    .global-navi-content li {
+        float: left;
+        /* width: auto; */
+        height: 100%;
+        /*inline-blockではダメなのはなぜ*/
+    }
+    
+    .global-navi-content li a {
+        font-family: AxisStd-Regular;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 32px;
+        /*中央揃えにするために30にしてるけど本来15*/
+        color: #676767;
+        margin: 8px;
+        text-decoration: none;
+        border-right: 1px solid #666666;
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+    
+    .global-navi-content li a.login1 {
+        border-right: 0px solid white;
+    }
+    
+    .global-navi-content li a.login2 {
+        border-right: 0px solid white;
+        height: 100%;
+        background-color: #D9D9D9;
+        color: #050066;
+        width: 108px;
+        display: relative;
+        top: 10px;
+    }
+    
+    .global-navi-content li:last-child {
+        height: 100%;
+        background-color: #D9D9D9;
+        color: #050066;
+        width: 108px;
+        display: relative;
+        top: 10px;
+    }
+    
+    .global-navi-content li a:last-child {
+        width: 100%;
+        margin: 8px 0;
+    }
+    
+    img#login {
+        width: 100%;
+    }
+    
+    li:last-child:after {
+        height: 30px;
+        background-color: #D9D9D9;
+        color: #050066;
+        width: 120px;
+        display: relative;
+        top: 10px;
+    }
+    
+    #logo {
+        height: 45px;
+        width: 210px;
+        float: left;
+    }
+    
+    #logo img {
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    ul.contact {
+        width: auto;
+        height: 50px;
+        margin: 0;
+        list-style-type: none;
+        padding-left: 0;
+        text-align: right;
+        /* contact ul をみぎに */
+    }
+    
+    .contact li {
+        display: inline-block;
+        text-align: center;
+        /*text-alignはaタグではなく、その親要素に記述*/
+    }
+    
+    #inquiry {
+        width: 210px;
+        height: 28px;
+    }
+    
+    li#sns1,
+    li#sns2,
+    li#sns3 {
+        vertical-align: 5px;
+        margin-left: 5px;
+    }
+    
+    li#sns1 {
+        margin-left: 25px;
+    }
+    
+    .contact li a {
+        font-size: 11px;
+        line-height: 15px;
+        font-weight: 400;
+        font-family: AxisStd-Regular, sans-serif;
+        color: #8d959c;
+        text-decoration: none;
+        /*アンダーラインはborderではなく、text-decorationで記述*/
+    }
+    
+    .header-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+    }
+    
+    .mini-menu {
+        vertical-align: bottom;
+        width: auto;
+        max-height: 150px;
+    }
+    
+    .mini-menu ul {
+        display: table;
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .mini-menu li {
+        display: table-cell;
+        vertical-align: middle;
+        width: 160px;
+        height: 34px;
+        border-right: 1px solid #DCDDDD;
+        text-align: center;
+    }
+    
+    .mini-menu li a {
+        font-family: AxisStd-Regular;
+        font-weight: 400;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        margin: 8px;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    
+    li#mini-menu-leftend {
+        border-left: 1px solid #DCDDDD;
+        position: relative;
+    }
+    
+    #mini-menu-leftend a.mini-menu-eng {
+        color: #1f286f;
+        font-weight: bold;
+    }
+    
+    li.mini-menu-eng {
+        color: #959DA3;
+    }
+    
+    ul.mini-menu2 {
+        list-style-type: none;
+        width: auto;
+        height: 40px;
+        border-collapse: separate;
+        border-spacing: 10px 0;
+        display: flex;
+        vertical-align: middle;
+        text-align: center;
+        float: right;
+        padding: 0;
+        border-collapse: separate;
+        border-spacing: 10px 0;
+        /* 要素をFlexコンテナとして定義する */
+    }
+    
+    li#orientation {
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 400;
+        font-family: AxisStd-Regular;
+        border: #050066 solid 1px;
+        width: 170px;
+        height: 40px;
+        flex-basis: 170px;
+        /*flexアイテムの幅を数値で指定 */
+        margin-right: 10px;
+        /*なぜこれは効くのか？*/
+    }
+    
+    li#orientation::after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        left: 18px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    li#document-request {
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 400;
+        font-family: AxisStd-Regular;
+        border: #050066 solid 1px;
+        width: 170px;
+        height: 40px;
+        /* flex-basis: 170px;
+    flexアイテムの幅を数値で指定 */
+    }
+    
+    li#document-request::after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        left: 36px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .mini-menu2 li a {
+        font-family: AxisStd-Regular;
+        font-weight: 700;
+        color: #1F276F;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 40px;
+        /*line-heightを親要素のheightに合わせることで、中央よせ*/
+    }
+    
+    .sub-menu {
+        background-color: #1f286f;
+        min-width: 1024;
+        width: 100%;
+        padding-bottom: 5px;
+        position: relative;
+    }
+    
+    li#mini-menu-leftend::after {
+        content: "";
+        position: absolute;
+        top: 58px;
+        left: 8px;
+        width: 0;
+        height: 0;
+        right: 3px;
+        bottom: 3px;
+        border-style: solid;
+        border-color: transparent transparent transparent #1f286f;
+        border-width: 10px 0 10px 17.32px;
+        transform: rotate(30deg);
+    }
+    
+    .sub-menu-content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #sub-menu1,
+    #sub-menu2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        list-style: none;
+        /* min-width: 1024; */
+        width: 100%;
+        padding-left: 0;
+        /**/
+        /* padding-top: 16px; */
+    }
+    
+    #sub-menu1 {
+        padding-top: 5px;
+        margin-top: 0;
+    }
+    
+    #sub-menu2 {
+        margin-top: 12px;
+        vertical-align: center;
+    }
+    
+    ul#sub-menu1,
+    ul#sub-menu2 {
+        text-align: center;
+        height: 33px;
+        /* table-layout: auto; */
+        width: 1040px;
+        /* */
+        padding-left: 0;
+    }
+    /* ul#sub-menu1 {
+    margin-left: 180px;
+} */
+    
+    #sub-menu1 li,
+    #sub-menu2 li {
+        display: inline-block;
+        vertical-align: middle;
+        width: auto;
+        height: 33px;
+        /* padding: 7px 7px 0 7px; */
+    }
+    
+    #sub-menu1 li {
+        margin: 10px auto;
+    }
+    
+    #sub-menu2 li {
+        margin: 0 auto;
+    }
+    
+    #sub-menu1 li a,
+    #sub-menu2 li a {
+        font-family: AxisStd-Light, メイリオ, Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        width: auto;
+        color: white;
+        text-decoration: none;
+        vertical-align: middle;
+        position: relative;
+        /*
+     カーソル時
+      color: #1f286f; */
+        /* a*/
+    }
+    
+    #sub-menu1 li a {
+        letter-spacing: 0.8px;
+    }
+    
+    #sub-menu2 li a {
+        letter-spacing: 0.6px;
+    }
+    
+    .sub-menu ul {
+        position: relative;
+    }
+    
+    .sub-menu ul li a#quafication {
+        /* position: absolute;
+    top: 5px;
+    left: 10px; */
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    
+    .sub-menu li#program::before,
+    .sub-menu li#ITtools::before,
+    .sub-menu li#event::before,
+    .sub-menu li#path-support::before,
+    .sub-menu li#club-online::before,
+    .sub-menu li#student-voice::before {
+        /*親要素はrelativeに
+  position: relative;*/
+        content: "\005C";
+        /* content: "＼"; */
+        font-family: arial;
+        display: inline-block;
+        /* position: absolute;
+    top: 1px;
+    left: 1px; */
+        width: 20px;
+        height: 20px;
+        color: #4F4F70;
+        margin-right: 14px;
+    }
+    
+    .sub-menu li#parent-voice::before,
+    .sub-menu li#achievement::before,
+    .sub-menu li#message::before,
+    .sub-menu li#uni-form::before,
+    .sub-menu li#campas::before,
+    .sub-menu li#movie::before,
+    .sub-menu li#tuition::before {
+        content: "\005C";
+        /* content: "＼"; */
+        font-family: arial;
+        display: inline-block;
+        /* position: absolute;
+    top: 1px;
+    left: 1px; */
+        width: 20px;
+        height: 20px;
+        color: #4F4F70;
+        margin-right: 12px;
+    }
+    
+    .sub-menu li#program,
+    .sub-menu li#ITtools,
+    .sub-menu li#event,
+    .sub-menu li#path-support,
+    .sub-menu li#online-club,
+    .sub-menu li#student-voice {
+        margin-left: 3px;
+        margin-left: 3px;
+    }
+    
+    .content-body {
+        display: block;
+        min-width: 1024px;
+    }
+    
+    .content-body h1,
+    .content-body h2 {
+        text-decoration: none;
+    }
+    
+    .mainImage {
+        /* height: 100％; */
+        min-width: 1024px;
+    }
+    
+    #Image {
+        text-align: center;
+        min-width: 1024px;
+        height: 430px;
+        background-image: url("../images/contetnt-body/about_mainimage01.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 50px;
+        /* object-fit: cover; */
+    }
+    /* #Image img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+} */
+    
+    .mainImage h1 {
+        width: 380px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        /* padding-top: 70px; */
+        margin-top: 0;
+        font-family: AxisStd-Light;
+        /* position: absolute;
+    top: 70px;
+    left: 780px; */
+    }
+    
+    .mainImage h1::after {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 15px;
+        background: url(../images/contetnt-body/about_maintitle_ruby01.png);
+        background-size: 100px 15px;
+    }
+    
+    .mainImage h1 a {
+        text-decoration: none;
+        color: white;
+        font-family: AxisStd-Light;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 94px;
+        letter-spacing: 10px;
+        height: 73px;
+        position: relative;
+    }
+    
+    .mainImage h1 a::after {
+        content: "";
+        position: absolute;
+        top: 70px;
+        left: 80px;
+        border: 0.5px white solid;
+        text-align: center;
+        width: 180px;
+    }
+    
+    .mainImage h2 {
+        width: 106px;
+        position: absolute;
+        color: white;
+        top: 170px;
+        left: 717px;
+    }
+    /* .mainImage h1 a::after {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 15px;
+    background: url(../images/contetnt-body/about_maintitle_ruby01.png);
+    background-size: 100px 15px;
+    position: absolute;
+    top: 110px;
+    left: 125px;
+} */
+    
+    .bread-crumb {
+        width: 100%;
+        height: 60px;
+        border-bottom: solid #E1E1E1 1px;
+        margin: 0;
+    }
+    
+    .bread-crumb ul {
+        list-style-type: none;
+        /* padding: 0 200px; */
+        height: 60px;
+        margin: 0 auto;
+        width: 1040px;
+    }
+    
+    .bread-crumb ul li {
+        float: left;
+        color: #272727;
+        line-height: 60px;
+    }
+    
+    li.level-2-sub-current {
+        padding-left: 15px;
+    }
+    /* 
+li.level-2-sub-current a {
+    margin-left: 10px;
+} */
+    
+    ul.bread-crumb li a {
+        font-size: 14px;
+        line-height: 60px;
+    }
+    
+    li.level-2-sub-current a::before {
+        content: ">";
+        display: inline-block;
+        margin: 0px 6px;
+        width: 5px;
+        height: 5px;
+        /* border-top: 1px solid #AAAAAA;
+    border-right: 1px solid #AAAAAA;
+    transform: rotate(45deg); */
+    }
+    
+    .about {
+        width: 1040px;
+        margin: 0 auto;
+        height: 680px;
+    }
+    
+    .about-content {
+        height: 550px;
+        width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about h2 {
+        text-align: center;
+        font-size: 33px;
+        line-height: 59px;
+        letter-spacing: 3px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        margin-bottom: 70px;
+        margin-top: 0px;
+        padding-top: 90px;
+    }
+    
+    .about h3 {
+        text-align: center;
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    
+    .about p {
+        width: 650px;
+        display: block;
+        margin: 16px auto;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+    }
+    
+    #border {
+        height: 1px;
+        border-bottom: solid 1px #1B1B1B;
+        width: 200px;
+        margin: 0 auto 24px auto;
+    }
+    
+    .education-policy {
+        width: 1040px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .education-policy h2 {
+        width: 1040px;
+        text-align: left;
+        font-size: 26px;
+        line-height: 57px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        border-bottom: solid 1px #272727;
+        margin-bottom: 32px;
+    }
+    
+    .education-policy h2 span {
+        border-bottom: #000000 3px solid;
+        width: 280px;
+        height: 48px;
+        vertical-align: bottom;
+        /* border-collapse: collapse; */
+        padding-right: 172px;
+        padding-bottom: 15px;
+    }
+    
+    .education-policy-content {
+        height: 382px;
+        width: auto;
+        position: relative;
+        margin: 0 auto;
+    }
+    
+    .education-policy-content ul {
+        display: block;
+        float: left;
+        list-style-type: none;
+    }
+    
+    .education-policy ul#left {
+        padding-left: 0px;
+    }
+    
+    .education-policy ul#right {
+        padding-left: 15px;
+    }
+    
+    .education-policy #left li {
+        border-right: solid #272727 1px;
+        width: 84px;
+        height: 50px;
+        padding-right: 3px;
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: left;
+        padding-left: 0px;
+    }
+    
+    .education-policy #right li {
+        width: auto;
+        height: 50px;
+        font-size: 19px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .education-policy-content img {
+        position: absolute;
+        top: 25px;
+        left: 580px;
+        object-fit: fill;
+        /* float: right; */
+        /* margin-top: 30px;
+        margin-right: 50px;
+         */
+    }
+    
+    .readMore img {
+        width: 70px;
+        height: 15px;
+        object-fit: fill;
+    }
+    
+    .N-standards-text {
+        position: relative;
+    }
+    
+    .N-standards-text::after {
+        content: "";
+        position: absolute;
+        left: 210px;
+        top: 215px;
+        width: 5px;
+        height: 5px;
+        /* display: block; */
+        margin: 10px;
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+        /* rotate/回転させる */
+    }
+    
+    .N-standards img {
+        float: left;
+        margin-left: 30px;
+        margin-top: 25px;
+        margin-right: 20px;
+        object-fit: fill;
+    }
+    
+    .N-standards {
+        width: 688px;
+        height: 330px;
+        margin-right: 177px;
+        margin-left: 177px;
+        /* margin-top: 407px; */
+        background-color: #F7F7F7;
+    }
+    
+    #N-STANDARDS {
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        display: block;
+        padding-top: 25px;
+        padding-left: 5px;
+        width: 344px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .N-standards p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        margin: 0;
+    }
+    
+    #L1 {
+        letter-spacing: 0.3em;
+        margin-top: 16px;
+    }
+    
+    #L2 {
+        letter-spacing: 0.05em;
+    }
+    
+    #L3 {
+        letter-spacing: 0.075em;
+    }
+    
+    #L4 {
+        letter-spacing: 0.15em;
+    }
+    
+    img#read-more {
+        font-size: 16px;
+        line-height: 0;
+        letter-spacing: 0.5px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        margin-top: 48px;
+        object-fit: fill;
+    }
+    
+    #read-more::before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        left: -125px;
+        width: 4px;
+        height: 4px;
+        margin: 0px 10px;
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    /* 魅力 */
+    
+    .attraction {
+        width: 1040px;
+        height: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+    
+    .attraction-content h2 {
+        width: 1040px;
+        text-align: left;
+        font-size: 26px;
+        line-height: 57px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        border-bottom: solid 1px #272727;
+        margin-bottom: 32px;
+    }
+    
+    .attraction-content h2 span {
+        border-bottom: #000000 3px solid;
+        width: 280px;
+        height: 48px;
+        vertical-align: bottom;
+        /* border-collapse: collapse; */
+        padding-right: 172px;
+        padding-bottom: 15px;
+    }
+    
+    .attraction-content {
+        height: 382px;
+        width: auto;
+    }
+    
+    .schedule1,
+    .schedule2,
+    .basic-program-white1,
+    .basic-program-white2,
+    .Advanced-program-white1,
+    .Advanced-program-white2,
+    .Advanced-program-white3,
+    .Advanced-program-white4,
+    .Advanced-program-white5,
+    .Advanced-program-white6,
+    .Advanced-program-white7,
+    .IT-tools,
+    .event,
+    .entrepreneurship,
+    .club-online,
+    .course1,
+    .course2,
+    .alliance-school,
+    .message,
+    .document-request,
+    .link,
+    .news {
+        height: 580px;
+        /* width: 1040px; */
+        width: 100%;
+        display: block;
+    }
+    
+    .schedule1 h3 {
+        font-size: 25px;
+        line-height: 45px;
+        color: #272727;
+        font-weight: 400;
+        font-family: AxisStd-Regular;
+        position: relative;
+        border-bottom: 1px solid #272727;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+    
+    .schedule1 p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-weight: 400;
+        font-family: AxisStd-Light;
+    }
+    
+    .schedule1 h3::after {
+        content: '';
+        display: inline-block;
+        width: 490px;
+        height: 515px;
+        /* vertical-align: middle; */
+        background: url(../images/contetnt-body/about_img02_01_20170927.png);
+        background-size: 490px 515px;
+        /* background-repeat: no-repeat; */
+        position: absolute;
+        top: 0px;
+        left: 545px;
+    }
+    
+    .schedule2 h3 {
+        font-size: 25px;
+        line-height: 45px;
+        color: #272727;
+        font-weight: 400;
+        font-family: AxisStd-Regular;
+        position: relative;
+        border-bottom: 1px solid #272727;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+    
+    .schedule2 p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-weight: 400;
+        font-family: AxisStd-Light;
+    }
+    
+    .schedule2 h3::after {
+        content: '';
+        display: inline-block;
+        width: 484px;
+        height: 402px;
+        /* vertical-align: middle; */
+        background: url(../images/contetnt-body/about_img02_02.png);
+        background-size: 484px 402px;
+        /* background-repeat: no-repeat; */
+        position: absolute;
+        top: 0px;
+        left: 545px;
+    }
+    /* .attraction-content p {
+        width: 506px;
+    } */
+    /* {
+        font-size: 33px;
+        line-height: 59px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+    } */
+    
+    .basic-program {
+        background-color: #F7F7F7;
+        width: 100％;
+        height: 1507px;
+        margin: 0 auto;
+    }
+    
+    .basic-program h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .basic-program a {
+        position: relative;
+    }
+    
+    .basic-program a::after {
+        content: "";
+        position: absolute;
+        /* top: 145px;
+    left: 620px; */
+        top: 55px;
+        left: 185px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .basic-program p {
+        font-size: 16px;
+        line-height: 29px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .basic-program-white1 {
+        margin: 70px auto 110px auto;
+        /*auto部分を0にするかも marignを全体的に変えるかも*/
+        width: 100%;
+        height: 510px;
+    }
+    
+    .basic-program-white1-content {
+        width: 1040px;
+        margin: 0 auto;
+    }
+    
+    .basic-program-white1-text {
+        float: right;
+        height: 510px;
+        width: 288px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .basic-program-white1-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_basic_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .basic-program-white1 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_basic_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .basic-program-white1 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .basic-program-white1 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    
+    .basic-program-white1 small {
+        float: right;
+        text-align: left;
+        font-size: 11px;
+        line-height: 20px;
+        width: 288px;
+        position: relative;
+    }
+    
+    .basic-program-white1-text small::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 106px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .basic-program-white1 .readMore {
+        margin-left: 15px;
+        margin-top: 40px;
+        width: 72px;
+        height: 13px;
+    }
+    
+    .basic-program-white2 {
+        margin: 70px auto 110px auto;
+        width: 100%;
+        height: 510px;
+    }
+    
+    .basic-program-white2-content {
+        width: 1040px;
+        margin: 0 auto;
+    }
+    
+    .basic-program-white2-text {
+        float: left;
+        height: 510px;
+        width: 280px;
+        margin-right: 30px;
+        position: relative;
+    }
+    
+    .basic-program-white2-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_basic_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .basic-program-white2 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_basic_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .basic-program-white2 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .basic-program-white2 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    
+    .basic-program-white2 small {
+        float: right;
+        text-align: left;
+        font-size: 13px;
+        line-height: 23px;
+        width: 280px;
+        position: relative;
+    }
+    
+    .basic-program-white2-text small::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 260px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .basic-program-white2 .readMore {
+        margin-left: 15px;
+        margin-top: 4px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    /* ここまでbasic-program */
+    /* ここからadvanced program */
+    
+    .advanced-program {
+        background-color: white;
+        width: 100%;
+        height: 4615px;
+    }
+    
+    .advanced-program h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+    }
+    
+    .advanced-program h2::after {
+        content: "";
+        position: absolute;
+        top: 150px;
+        left: 620px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .advanced-program p {
+        font-size: 16px;
+        line-height: 29px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .Advanced-program-white1 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white1-text {
+        float: right;
+        height: 510px;
+        width: 288px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white1-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_basic_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white1 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white1 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .Advanced-program-white1-text p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+        margin-top: 0;
+        position: relative;
+    }
+    /* .Advanced-program-white1 small {
+        float: right;
+        text-align: left;
+        font-size: 11px;
+        line-height: 20px;
+        width: 288px;
+        position: relative;
+    } */
+    
+    .Advanced-program-white1-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 286px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white1 .readMore {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+    }
+    
+    .Advanced-program-white2 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white2-text {
+        float: left;
+        height: 510px;
+        width: 280px;
+        margin-right: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white2-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_basic_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white2 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white2 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .Advanced-program-white2 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    
+    .Advanced-program-white2 small {
+        float: right;
+        text-align: left;
+        font-size: 13px;
+        line-height: 23px;
+        width: 280px;
+        position: relative;
+    }
+    
+    .Advanced-program-white2-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 365px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white2 .readMore {
+        margin-left: 15px;
+        margin-top: 4px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .Advanced-program-white3 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white3-text {
+        float: right;
+        height: 510px;
+        width: 288px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white3-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_advanced_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white3 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white3 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    
+    .Advanced-program-white3 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    /* 矢印 */
+    
+    .Advanced-program-white3-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 415px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white3 .readMore {
+        margin-left: 20px;
+        margin-top: 0px;
+        width: 72px;
+        height: 13px;
+    }
+    
+    .Advanced-program-white4 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white4-text {
+        float: left;
+        height: 510px;
+        width: 280px;
+        margin-right: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white4-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_advanced_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white4 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white4 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .Advanced-program-white4 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+        /* position: relative; */
+    }
+    
+    .Advanced-program-white4-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 410px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white4 .readMore {
+        margin-left: 15px;
+        margin-top: 6px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .Advanced-program-white5 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white5-text {
+        float: right;
+        height: 510px;
+        width: 288px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white5-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_advanced_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white5 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white5 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    
+    .Advanced-program-white5 p {
+        float: left;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    
+    .Advanced-program-white5-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 410px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white5 .readMore {
+        margin-left: 15px;
+        margin-top: 30px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .Advanced-program-white6 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white6-text {
+        float: left;
+        height: 510px;
+        width: 280px;
+        margin-right: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white6-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_advanced_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white6 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white6 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+    .Advanced-program-white6 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    /* .Advanced-program-white6 small {
+        float: right;
+        text-align: left;
+        font-size: 13px;
+        line-height: 23px;
+        width: 280px;
+        position: relative;
+    } */
+    
+    .Advanced-program-white6-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 310px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white6 .readMore {
+        margin-left: 15px;
+        margin-top: 16px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .Advanced-program-white7 {
+        margin: 70px auto 110px auto;
+        width: 1040px;
+        height: 510px;
+    }
+    
+    .Advanced-program-white7-text {
+        float: right;
+        height: 510px;
+        width: 288px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .Advanced-program-white7-text .sign {
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        background-color: #000000;
+        /* background: url(../images/contetnt-body/text_advanced_program01_white01.png); */
+        background-size: 100px 27px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+    }
+    
+    .Advanced-program-white7 h3::before {
+        content: '';
+        display: inline-block;
+        width: 100px;
+        height: 27px;
+        vertical-align: middle;
+        /* background-color: #000000; */
+        background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+        background-size: 80px 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: -35px;
+        left: 7px;
+    }
+    
+    .Advanced-program-white7 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    
+    .Advanced-program-white7 p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+        float: left;
+    }
+    /* .Advanced-program-white7 small {
+        float: right;
+        text-align: left;
+        font-size: 11px;
+        line-height: 20px;
+        width: 288px;
+        position: relative;
+    } */
+    
+    .Advanced-program-white7-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 340px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .Advanced-program-white7 .readMore {
+        margin-left: 15px;
+        margin-top: 30px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    /* ここまでadvanced program */
+    /* ここからITtools */
+    
+    .IT-tools {
+        height: 838px;
+        width: 100%;
+        background-color: #F7F7F7;
+        display: block;
+    }
+    
+    .IT-tools h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .IT-tools h2 a {
+        position: relative;
+    }
+    
+    .IT-tools a::after {
+        content: "";
+        position: absolute;
+        top: 58px;
+        left: 260px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .IT-tools-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .IT-tools-text {
+        float: left;
+        height: 510px;
+        width: 288px;
+        margin-right: 30px;
+        position: relative;
+    }
+    
+    .IT-tools h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .IT-tools p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        float: left;
+        width: 288px;
+    }
+    
+    .IT-tools p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 425px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .IT-tools .readMore {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+    }
+    /* ここまでアイティツールズ */
+    /* ここからイベント */
+    
+    .event {
+        height: 838px;
+        width: 100%;
+        /* background-color: #F7F7F7; */
+        display: block;
+    }
+    
+    .event-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .event h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .event h2::after {
+        content: "";
+        position: absolute;
+        top: 145px;
+        left: 420px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .event-text {
+        float: right;
+        height: 510px;
+        width: 280px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .event h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .event p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        float: left;
+    }
+    
+    .event p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 346px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .event .readMore {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+    }
+    /* ここまでイベント */
+    /* ここから起業部 */
+    
+    .entrepreneurship {
+        height: 810px;
+        width: 100%;
+        background-color: #F7F7F7;
+        display: block;
+    }
+    
+    .entrepreneurship-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .entrepreneurship h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .entrepreneurship h2::after {
+        content: "";
+        position: absolute;
+        top: 145px;
+        left: 420px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .entrepreneurship-text {
+        float: left;
+        height: 510px;
+        width: 270px;
+        /* margin-left: 30px; */
+        position: relative;
+    }
+    
+    .entrepreneurship h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .entrepreneurship p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        float: left;
+    }
+    
+    .entrepreneurship p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 264px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .entrepreneurship .readMore {
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .entrepreneurship img {
+        margin-left: 30px;
+        width: 720px;
+        height: 480px;
+        object-fit: fill;
+    }
+    /* ここまで起業部 */
+    /* ここからクラブオンライン */
+    
+    .club-online {
+        height: 838px;
+        width: 100%;
+        /* background-color: #F7F7F7; */
+        display: block;
+    }
+    
+    .club-online-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .club-online h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .club-online h2::after {
+        content: "";
+        position: absolute;
+        top: 145px;
+        left: 420px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .club-online-text {
+        float: right;
+        height: 510px;
+        width: 280px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .club-online h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .club-online p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        float: left;
+    }
+    
+    .club-online p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 266px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .club-online .readMore {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+    }
+    /* ここまでクラブオンライン */
+    /* ここからコース */
+    
+    .course {
+        background-color: #F7F7F7;
+        width: 100%;
+        height: 1450px;
+    }
+    
+    .course h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 70px;
+    }
+    
+    .course h2::after {
+        content: "";
+        position: absolute;
+        top: 145px;
+        left: 620px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    /* .course p {
+            font-size: 16px;
+            line-height: 29px;
+            color: #272727;
+            font-family: AxisStd-Light, sans-serif;
+            font-weight: 400;
+            text-align: center;
+        } */
+    /* mここまでOK */
+    /* ここからコース1 */
+    
+    .course1 {
+        margin: 80px 200px 110px auto;
+        width: 100%;
+        height: 510px;
+        display: block;
+    }
+    
+    .course1-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    /* 多分ココまでok */
+    
+    .course1-text {
+        float: left;
+        height: 510px;
+        width: 288px;
+        margin-right: 30px;
+        position: relative;
+    }
+    /* .course1-text .sign {
+            display: inline-block;
+            width: 100px;
+            height: 27px;
+            vertical-align: middle;
+            background-color: #000000;
+            background-size: 100px 27px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+        } */
+    /* .course1 h3::before {
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 27px;
+            vertical-align: middle;
+            background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+            background-size: 80px 17px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -35px;
+            left: 7px;
+        } */
+    
+    .course1 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    .course1-text p {
+        float: left;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+        margin-top: 0;
+        position: relative;
+    }
+    /* .course1 small {
+        float: right;
+        text-align: left;
+        font-size: 11px;
+        line-height: 20px;
+        width: 288px;
+        position: relative;
+    } */
+    
+    .course1-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 166px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .course1 .readMore {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .course2 {
+        margin: 80px auto 110px auto;
+        width: 100%;
+        height: 510px;
+        display: block;
+    }
+    
+    .course2-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .course2-text {
+        float: right;
+        height: 510px;
+        width: 288px;
+        margin-left: 30px;
+        position: relative;
+    }
+    /* .course1-text .sign {
+            display: inline-block;
+            width: 100px;
+            height: 27px;
+            vertical-align: middle;
+            background-color: #000000;
+            background-size: 100px 27px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+        } */
+    /* .course1 h3::before {
+            content: '';
+            display: inline-block;
+            width: 100px;
+            height: 27px;
+            vertical-align: middle;
+            background: url(../images/contetnt-body/text_advanced_program01_white01.png);
+            background-size: 80px 17px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -35px;
+            left: 7px;
+        } */
+    
+    .course2 h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    .course2-text p {
+        float: right;
+        font-size: 16px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-align: left;
+        margin-top: 0;
+        position: relative;
+        width: 284px;
+    }
+    /* .course1 small {
+        float: right;
+        text-align: left;
+        font-size: 11px;
+        line-height: 20px;
+        width: 288px;
+        position: relative;
+    } */
+    
+    .course2-text p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 222px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .course2 .readMore {
+        margin-left: 20px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    /* ここまでコース */
+    /* ここから提携校 */
+    
+    .alliance-school {
+        height: 1335px;
+        width: 100%;
+        display: block;
+    }
+    
+    .alliance-school-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .alliance-school h2 {
+        font-size: 33px;
+        line-height: 59px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        position: relative;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .alliance-school h2::after {
+        content: "";
+        position: absolute;
+        top: 145px;
+        left: 420px;
+        border: 1px #272727 solid;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .alliance-school-text {
+        float: left;
+        height: 510px;
+        width: 280px;
+        margin-left: 30px;
+        position: relative;
+    }
+    
+    .alliance-school h3 {
+        float: left;
+        font-size: 22px;
+        line-height: 40px;
+        /* letter-spacing: 1px; */
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    
+    .alliance-school p {
+        font-size: 16px;
+        line-height: 29px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: left;
+        float: left;
+    }
+    
+    .alliance-school p::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 340px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .alliance-school .readMore {
+        margin-left: 15px;
+        margin-top: 0;
+        width: 72px;
+        height: 13px;
+        float: left;
+    }
+    
+    .whats-Nkou {
+        text-align: center;
+        margin: 210px 0 100px 0;
+    }
+    /* ここまで提携校 */
+    /* ここからメッセージ */
+    
+    .message {
+        background-color: #F6F6F6;
+        height: 450px;
+        width: 100％;
+        display: block;
+        border-top: solid 1px #E2E2E2;
+        border-bottom: solid 1px #E2E2E2;
+    }
+    
+    .message ul {
+        padding-left: 0;
+        margin: 12px auto 70px auto;
+        width: 1044px;
+        height: 304px;
+    }
+    
+    .message-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    ul.upper {
+        height: 147px;
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    
+    ul.lower {
+        height: 147px;
+        width: 100%;
+        padding-bottom: 80px;
+        margin: 0;
+    }
+    
+    li.upper-left {
+        width: 479px;
+        height: 131px;
+        float: left;
+        /* display: inline-block; */
+        background-color: ivory;
+        vertical-align: middle;
+    }
+    
+    .upper-left a {
+        height: auto;
+        padding: 37px 0px 0px 27px;
+    }
+    
+    li.upper-right {
+        width: 479px;
+        height: 131px;
+        float: right;
+        word-break: break-all;
+        /* display: inline-block; */
+    }
+    
+    .upper-right a {
+        height: 90px;
+        padding: 0px 0px 10px 27px;
+    }
+    
+    li.lower-left {
+        width: 479px;
+        height: 113px;
+        float: left;
+        /* display: inline-block; */
+    }
+    
+    .lower-left a {
+        padding: 20px 0px 0px 27px;
+    }
+    
+    li.lower-right {
+        width: 479px;
+        height: 113px;
+        float: right;
+        /* display: inline-block; */
+    }
+    
+    .lower-right a {
+        padding: 8px 0px 0px 27px;
+    }
+    
+    .messages li {
+        /* border: 6px solid grey; */
+        list-style-type: none;
+        padding: 6px;
+        /*topは17斗40*/
+        background: url("../images/contetnt-body/bg_diagonal01_black01.png");
+    }
+    
+    .list {
+        background-color: ivory;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .list::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 67px;
+        left: 450px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    
+    .messages a.title {
+        font-size: 25px;
+        line-height: 45px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 385px;
+        display: block;
+    }
+    
+    .messages p {
+        font-size: 13px;
+        line-height: 23px;
+        color: #272727;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 0;
+        margin-bottom: 0px;
+        padding: 0px 55px 15px 27px;
+    }
+    
+    .messages li::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        /* margin: 0px 10px; */
+        border-top: 2px solid #272727;
+        border-right: 2px solid #272727;
+        transform: rotate(45deg);
+    }
+    /* ここまでメッセージ */
+    /* ここから動画 */
+    
+    .movie {
+        height: 500px;
+        width: 100％;
+        display: block;
+    }
+    
+    .movie-content {
+        width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .movie iframe {
+        margin-top: 72px;
+    }
+    /* ここまで動画 */
+    /* ここから資料請求 */
+    
+    .document-request {
+        height: 250px;
+        width: 100%;
+        background-image: url("../images/contetnt-body/footer02_bg01.png");
+        background-repeat: repeat;
+        display: block;
+        color: white;
+    }
+    
+    .document-request-content {
+        width: 540px;
+        height: auto;
+        margin: 0px auto 0px auto;
+        padding-top: 42px;
+        padding-bottom: 37px;
+    }
+    
+    p#document-request-title {
+        display: block;
+        margin-top: 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+        color: #ffffff;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+    
+    ul.document-request-content-left {
+        width: 275px;
+        margin: 0;
+        list-style-type: none;
+        /* display: inline-block; */
+        padding: 0;
+        float: left;
+    }
+    
+    #document,
+    #orientailing {
+        border: 1px black solid;
+        width: 260px;
+        height: 55px;
+        background-color: white;
+        /* display: inline-block; */
+        /* float: left; */
+        margin-right: 0;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+        position: relative;
+    }
+    
+    #document p,
+    #orientailing p {
+        padding-right: 52px;
+        padding-left: 52px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #1c1c1c;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    #orientailing p {
+        text-align: left;
+    }
+    
+    #document::before {
+        content: '';
+        /* display: inline-block; */
+        width: 50px;
+        height: 50px;
+        background: url(../images/contetnt-body/icon_book01_black01.png);
+        background-size: 30px 30px;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        background-repeat: no-repeat;
+    }
+    
+    #orientailing::before {
+        content: '';
+        /* display: inline-block; */
+        width: 50px;
+        height: 50px;
+        background: url(../images/contetnt-body/icon_balloon01_black01.png);
+        background-size: 30px 30px;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        background-repeat: no-repeat;
+    }
+    
+    #document::after,
+    #orientailing::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        left: 230px;
+        width: 6px;
+        height: 6px;
+        /* margin: 0px 10px; */
+        border-top: 3px solid #272727;
+        border-right: 3px solid #272727;
+        transform: rotate(45deg);
+        background-color: white;
+    }
+    
+    #tel {
+        width: 250px;
+        height: 70px;
+        display: inline-block;
+    }
+    
+    #tel img {
+        width: 250px;
+        height: 29px;
+    }
+    
+    p#open {
+        font-size: 12px;
+        line-height: 17px;
+        color: #ffffff;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    #contact p {
+        border: white 1px solid;
+        font-size: 13px;
+        line-height: 18px;
+        color: #ffffff;
+        font-family: AxisStd-Light, sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    /* ここまで資料請求 */
+    /* ここからフッターとか */
+    
+    .index {
+        display: block;
+        width: 1440px;
+        height: 950px;
+        background-color: #F8F8F8;
+    }
+    
+    .privacy-Policy {
+        margin-right: auto;
+        margin-left: auto;
+        height: 100px;
+        border-top: 1px solid #C9C9C9;
+        display: block;
+        /* display: block; */
+    }
+    
+    .privacy-Policy li {
+        display: inline-block;
+        /* text-align: center; 
+    vertical-align: middle;
+    height: 50px;
+    text-alignはaタグではなく、その親要素に記述
+     line-height: 100px; */
+    }
+    
+    ul#privacy-Policy {
+        width: 400px;
+        float: left;
+        margin: 0;
+        height: 100px;
+        padding-left: 0;
+        /* margin-left: 25px;
+    margin-right: 25px; */
+    }
+    
+    ul#privacy-Policy li {
+        height: 100px;
+    }
+    
+    ul#privacy-Policy li a {
+        font-size: 14px;
+        line-height: 100px;
+        color: #272727;
+        letter-spacing: 1px;
+    }
+    
+    footer {
+        display: block;
+    }
+    
+    ul#sns-footer {
+        width: 550px;
+        float: right;
+        height: 100px;
+        margin: 0px;
+        list-style-type: none;
+        padding-left: 0;
+        vertical-align: middle;
+        text-align: right;
+    }
+    
+    ul#sns-footer li {
+        width: auto;
+        /* 165px */
+        height: 45px;
+        margin-top: 25px;
+        /* border-right: #DDDDDD 1px solid; */
+        vertical-align: middle;
+    }
+    
+    ul#sns-footer li#twitter,
+    ul#sns-footer li#facebook {
+        border-right: #DDDDDD 1px solid;
+        margin-right: 3px;
+    }
+    
+    #sns-footer img {
+        width: 28px;
+        height: 28px;
+        object-fit: fill;
+    }
+    /* li#twitter a::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    background: url();
+    background-size: contain;
+} */
+    
+    ul#sns-footer li a {
+        text-decoration: none;
+        background-color: white;
+    }
+    
+    ul#sns-footer li a::after {
+        content: "";
+        display: inline-block;
+        margin: 10px 10px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid #AAAAAA;
+        border-right: 1px solid #AAAAAA;
+        transform: rotate(45deg);
+    }
+    
+    ul#sns-footer li p {
+        margin: 0;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 14px;
+        font-family: AxisStd-Light;
+        font-weight: 400;
+        color: #272727;
+        padding-top: 10px;
+        text-align: left;
+        letter-spacing: 1px;
+    }
+    
+    .footer-wrap {
+        background-color: #191919;
+        height: 50px;
+    }
+    
+    #footer-wrap {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    
+    .footer-wrap p {
+        color: #999999;
+        font-family: AxisStd-Regular;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+    }
+    
+    #footer-home {
+        float: left;
+    }
+    
+    #copyright {
+        float: right;
+    }
